@@ -1,0 +1,170 @@
+/* 하루 안보기 모달 */
+.insite_modal{
+  width: 460px;
+  padding: 38px 43px 35px;
+  position: fixed;
+  left: 147px;
+  top: 10vh;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+  z-index: 1;
+  background: var(--white);
+  font-size: 15px;
+  line-height: 28px;
+  display: none;
+  p{
+    margin: 0;
+  }
+  hr{
+    color:var(--bs-primary);
+    opacity: 1;
+    margin: 12px 0;
+  }
+}
+.insite_modal.show{
+  display: block;
+}
+.modal_header img{
+  height: 67px;
+}
+.modal_header p{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #797979;
+}
+.modal_header h2{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29px;
+}
+.info_link img:first-of-type{
+  margin-right: 20px;
+}
+
+.modal_info{
+  img{
+    width: 20px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  span{
+    font-weight: 600;
+    color:var(--bs-primary);
+  }
+}
+.modal_work h4{
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 700;
+  color:var(--bs-primary);
+  margin-bottom: 4px;
+}
+
+
+/* 페이지 디자인 */
+aside {
+  position: relative;
+  width: 60%;
+  height: 100vh;
+  background: url(../img/core-img/Login_Logo.svg) no-repeat var(--bs-light);
+  background-position: right 123px top 40%;
+}
+aside h2,
+aside h3 {
+  font-weight: 900;
+  color: #0a58ca;
+}
+aside h2 {
+  width: 571px;
+  font-size: 36px;
+}
+aside h3 {
+  width: 470px;
+  font-size: 24px;
+}
+.copy {
+  position: absolute;
+  right: 42%;
+  bottom: 70px;
+}
+.login_container {
+  width: 100%; /* 부모 요소에 맞게 조정 */
+  max-width: 600px; /* 최대 너비 제한 */
+  margin: 0 auto;
+}
+.login_container h1 {
+  margin-bottom: 51px;
+}
+.login_box {
+  width: 60%;
+}
+form {
+  color: #9e9e9e;
+}
+form .form-floating,
+.login_box button {
+  width: 100%;
+  height: 68px;
+}
+.forgotpw,
+.login_change {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #9e9e9e;
+}
+
+.teacher_login_php {
+  aside {
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    background: url(../img/core-img/Login_Logo.svg) no-repeat var(--bs-primary);
+    background-position: right 123px top 40%;
+  }
+  .login_sns_teacher {
+    width: 60%;
+  }
+  .login_sns_teacher button {
+    font-weight: 600;
+    width: 45%;
+    height: 60px;
+    background-color: white;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .login_container h1 {
+    margin-bottom: 0;
+  }
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 55%;
+  margin: 20px 0;
+  color: #9e9e9e;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+}
+.divider::before {
+  margin-right: 10px;
+}
+.divider::after {
+  margin-left: 10px;
+}
+.divider span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #9e9e9e;
+}

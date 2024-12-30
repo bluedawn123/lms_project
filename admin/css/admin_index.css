@@ -1,0 +1,62 @@
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: none !important; 
+  }
+}
+.dashboard {
+  width: 100%;
+  box-sizing: border-box; /* 패딩과 경계를 포함한 너비 계산 */
+}
+.dashboard small{
+  color: var(--medium_gray);
+}
+.dashboard .card-body{
+  display: flex;
+}
+.dashboard .card-body h6{
+  font-size: 20px;
+  font-weight: 700;
+}
+.amount_teacher .card,
+.amount_member .card,
+.amount_sales .card{
+  height: 100%;
+}
+.col-md-4 .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+  text-align: center;
+}
+.QnA table{
+  --bs-table-bg:none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.table tbody tr td,
+.table thead tr th {
+  padding: 0.3rem;
+}
+thead tr th{
+  color:var(--primary) !important;
+  font-weight: 700;
+}
+.QnA tbody, 
+.QnA td, 
+.QnA tfoot, 
+.QnA th, 
+.QnA thead
+.QnA tr{
+  border: none;
+}
+.QnA tbody tr {
+  border-bottom: 1px solid var(--medium_gray);
+}
+.QnA tbody tr:last-child {
+  border-bottom: none;
+}
+.Revenue h3{
+  font-weight: 700;
+}

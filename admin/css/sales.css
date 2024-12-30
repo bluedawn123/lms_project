@@ -1,0 +1,75 @@
+.sales .row {
+  --bs-gutter-x: 24px; /* 행 간격 */
+  --bs-gutter-y: 24px; /* 열 간격 */
+}
+
+.sales_box {
+  height: 180px; /* 박스 높이 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 */
+  padding: 16px; /* 내부 여백 */
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.sales_chart {
+  height: 400px; /* 차트 높이 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 */
+  padding: 16px; /* 내부 여백 */
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.sales dl {
+  height: 100%;
+}
+
+/* 제목 스타일 */
+.sales dt {
+  font-weight: bold; /* 굵은 글꼴 */
+  font-size: 1.2rem; /* 제목 크기 */
+  color: var(--darkBlue); /* 색상 */
+  /* 선 스타일용 */
+  margin-bottom: 8px; /* 아래 여백 */
+}
+
+.sales dt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 48px;
+  height: 1px; /* 선 높이 */
+  background-color: rgba(0, 0, 0, 0.2); /* 선 색상 */
+}
+
+.sales dd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  font-size: 2rem; /* 설명 크기 */
+  margin: 0; /* 기본 여백 제거 */
+  color: #212529; /* 텍스트 색상 */
+
+  .red {
+    font-size: 1.3rem;
+    color: var(--secondary);
+  }
+  .blue {
+    font-size: 1.3rem;
+    color: var(--primary);
+  }
+}
+.sales .sales_box dd {
+  height: 80%;
+}
+
+.chart-box {
+  width: 25%;
+  height: 300px;
+}
+
+.sales .data_table {
+  font-size: 1rem;
+}

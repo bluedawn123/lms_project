@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --primary: #0d6efd;
+  --darkBlue: #0a58ca;
+  --secondary: #dc3545;
+  --darkRed: #bb2d3b;
+  --skyBlue: #c2dbfe;
+  --darkGray: #797979;
+  --lineGray: #e2e6e9;
+  --light_gray: #ebebeb;
+  --medium_gray: #a0a0a0;
+  --blueGray: #f8f9fa;
+  --black: #000000;
+}
+
+/* Text Style */
+body {
+  font-family: "Noto Sans KR", "Roboto", "Apple SD Gothic Neo", "Pretendard",
+    "Malgun Gothic", sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+
+  /* background-color: #757575; */
+}
+.main_tt {
+  font: 36/40px "Noto Sans KR", sans-serif;
+  font-weight: 900;
+}
+.sub_tt {
+  font: 28/40px "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+.tt_01 {
+  font: 24/40px "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+.tt_02 {
+  font: 20/29px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.tt_03 {
+  font: 18/22px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.tt_04 {
+  font: 18/20px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.tt_05 {
+  font: 14/20px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+/* NAV */
+
+body > nav {
+  width: 300px;
+  height: 100vh;
+  border-right: solid 1px #c2c2c2;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+}
+.nav_aside_menu {
+  width: 100%;
+}
+.accordion {
+  width: 100%;
+}
+.accordion-header button {
+  padding: 0 39px 0 69px;
+  height: 48px;
+  align-items: center;
+}
+.top_logo a img {
+  width: 128px;
+  margin: 36px 0 53.5px 0;
+}
+.nav_header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: solid 1px #c2c2c2;
+  background-color: #fff;
+  z-index: 100;
+}
+.nav_header h2 {
+  position: relative;
+  left: 360px;
+  line-height: 120px;
+}
+.admin_account {
+  margin-bottom: 60px;
+}
+.admin_account p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav_aside_menu ul {
+  padding: 0;
+  margin: 3px 0 3px 0;
+}
+.nav_aside_menu ul li {
+  text-align: center;
+  list-style: none;
+}
+.nav_aside_menu ul li a {
+  color: var(--bs-gray-600);
+  text-decoration: none;
+  line-height: 36px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.accordion .accordion-item {
+  border: none;
+}
+.accordion-child.active a{
+  color: var(--bs-link-hover-color);
+  font-weight: 700;
+}
+.accordion-header .accordion-button,
+.accordion-header .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+}
+.accordion-header .accordion-button:not(.collapsed) {
+  color: var(--bs-link-hover-color) !important;
+  font-weight: 700 !important;
+  transition: 0.3s;
+}
+.accordion-item:first-child .accordion-button::after {
+  display: none;
+}
+.accordion-button img {
+  margin-right: 15px;
+  width: 29px;
+  height: 29px;
+}
+.accordion-header .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+#nav_cate_dashboard {
+  display: none;
+}
+.admin_account a {
+  padding: 5px;
+  background: var(--bs-gray-300);
+  border-radius: 5px;
+  color: var(--bs-gray-600);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.admin_account a:hover {
+  background: var(--bs-danger);
+  color: #fff;
+}
+
+/* page_wapper */
+.page_wapper {
+  padding: 204px 84px 84px 384px;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0;
+}
+.pagination .prev {
+  margin-right: 40px;
+}
+.pagination .next {
+  margin-left: 40px;
+}
+.pagination .page-item {
+  margin: 0 5px;
+}
+.pagination .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.pagination .page-link:hover {
+  background-color: #e0e0e0;
+  text-decoration: none;
+}
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+}
+.pagination .page-item.disabled .page-link {
+  background-color: #d6d6d6;
+  color: #999;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,69 @@
+.insert_name {
+  width: 190px;
+}
+.bold {
+  font-weight: bold;
+}
+
+.member_coverImg {
+  width: 100%;
+  height: 220px;
+  background: #ebebeb;
+}
+
+.member_coverImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.twoculumn_table {
+  display: flex !important;
+  align-items: center !important;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border: none;
+}
+
+table tr td span {
+  margin-right: 120px;
+}
+
+table tr td {
+  padding: 0.5rem !important;
+}
+
+textarea#member_detail {
+  height: 300px;
+}
+
+textarea#objectives,
+textarea#tag {
+  height: 150px;
+}
+
+.member h3,
+.member h4,
+.member h5,
+.member h6 {
+  font-weight: 600;
+}
+
+.member input {
+  z-index: 0;
+}
+.member_prVideo {
+  position: relative;
+  z-index: 0;
+}
+
+#prVideo_type {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,9 @@
+/* 이미지 미리보기 넣을 박스 css */
+
+.box {
+  width: 100%;
+  height: 220px;
+  background: #ebebeb;
+  position: relative;
+  overflow: hidden;
+}
