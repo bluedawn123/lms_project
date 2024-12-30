@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --primary: #0d6efd;
+  --darkBlue: #0a58ca;
+  --secondary: #dc3545;
+  --darkRed: #bb2d3b;
+  --skyBlue: #c2dbfe;
+  --darkGray: #797979;
+  --lineGray: #e2e6e9;
+  --light_gray: #ebebeb;
+  --medium_gray: #a0a0a0;
+  --blueGray: #f8f9fa;
+  --black: #000000;
+}
+html,
+body {
+  height: 100%; /* 화면 전체 높이를 100%로 */
+  margin: 0; /* 기본 여백 제거 */
+}
+
+/* Text Style */
+body {
+  font-family: "Noto Sans KR", "Roboto", "Apple SD Gothic Neo", "Pretendard",
+    "Malgun Gothic", sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+
+  /* background-color: #757575; */
+}
+.main_tt {
+  font: 36/40px "Noto Sans KR", sans-serif;
+  font-weight: 900;
+}
+.sub_tt {
+  font: 28/40px "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+.tt_01 {
+  font: 24/40px "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+.tt_02 {
+  font: 20/29px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.tt_03 {
+  font: 18/22px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.tt_04 {
+  font: 18/20px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.tt_05 {
+  font: 14/20px "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.btn {
+  border-radius: 3px !important;
+}
+/* NAV */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+.navbar img {
+  height: 40px; /* 이미지 높이 조정 */
+  width: auto; /* 비율 유지 */
+  margin: 20px 0;
+}
+.search-form .form-control {
+  width: 324px; /* 검색창 너비 */
+  height: 30px; /* 검색창 높이 */
+  font-size: 14px; /* 글씨 크기 */
+  border: none;
+  background-color: var(--lineGray);
+}
+.search-form .btn {
+  height: 30px; /* 버튼 높이 */
+  font-size: 16px; /* 버튼 글씨 크기 */
+  padding: 0 10px; /* 버튼 안쪽 여백 */
+  border: none;
+  color: var(--darkGray);
+}
+.search-form .btn.btn-outline-success {
+  --bs-btn-color: none;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: none;
+  --bs-btn-hover-bg: none;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: none;
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: none;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: none;
+  --bs-gradient: none;
+}
+.nav-link {
+  line-height: 60px;
+}
+.nav_sign a {
+  padding: 3.5px 16px;
+  font-weight: 600;
+}
+.nav_sign .btn.btn-secondary {
+  background-color: var(--lineGray);
+  border: var(--lineGray);
+  color: var(--darkGray);
+}
+
+.dropdown-menu {
+  border-radius: 0 !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* 호버 시 드롭다운 메뉴 표시 */
+  margin-top: 0; /* 자연스러운 위치 조정 */
+  transition: none !important;
+  border: none;
+  color: var(--darkGray);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.dropdown-toggle::after {
+  display: none; /* 드롭다운 아이콘 숨김 */
+}
+.dropdown-menu .dropdown-item {
+  color: var(--darkGray);
+}
+/* 모달.. 카테고리 선택 관련 */
+.category-btn {
+  min-width: 100px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* 선택된 버튼 스타일 */
+.category-btn.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 호버 효과 */
+.category-btn:hover {
+  background-color: #f0f8ff;
+  color: #007bff;
+}
+
+/* 버튼 그룹 스타일 */
+#categoryButtons {
+  justify-content: center;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* 호버 시 드롭다운 메뉴 표시 */
+  margin-top: 0; /* 자연스러운 위치 조정 */
+}
+.dropdown-toggle::after {
+  display: none; /* 드롭다운 아이콘 숨김 */
+}
+
+/* page_wapper */
+.page_wapper {
+  padding: 204px 84px 84px 384px;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0;
+}
+.pagination .prev {
+  margin-right: 40px;
+}
+.pagination .next {
+  margin-left: 40px;
+}
+.pagination .page-item {
+  margin: 0 5px;
+}
+.pagination .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.pagination .page-link:hover {
+  background-color: #e0e0e0;
+  text-decoration: none;
+}
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+}
+.pagination .page-item.disabled .page-link {
+  background-color: #d6d6d6;
+  color: #999;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  margin-top: auto;
+}
+.footer a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 20px;
+  /* margin: 0 10px; */
+}
+.footer a:hover {
+  color: #0056b3;
+}
+.footer .social-icons a {
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+/* 모달 전체 스타일 */
+.modal-content {
+  border-radius: 10px; /* 모서리를 둥글게 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+  overflow: hidden; /* 내부 요소가 영역을 넘지 않도록 */
+  font-family: "Arial", sans-serif; /* 폰트 설정 */
+}
+
+/* 모달 헤더 */
+.modal-header {
+  background-color: #007bff; /* 파란색 배경 */
+  color: white; /* 흰색 텍스트 */
+  padding: 5px 8px; /* 패딩 추가 */
+  font-size: 10px;
+}
+
+.modal-title {
+  font-weight: normal; /* 글씨 굵게 */
+  font-size: 15px;
+}
+
+/* 모달 본문 */
+.modal-body {
+  padding: 100px; /* 여백 추가 */
+  background-color: #f8f9fa; /* 연한 회색 배경 */
+}
+
+/* 모달 푸터 */
+.modal-footer {
+  background-color: #f1f1f1; /* 밝은 회색 배경 */
+  border-top: 2px solid #ddd; /* 위쪽 테두리 */
+  padding: 5px 8px; /* 패딩 추가 */
+}
+
+/* 버튼 커스터마이징 */
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px; /* 둥근 버튼 */
+  padding: 5px 10px;
+  transition: background-color 0.3s ease; /* 부드러운 색상 전환 */
+  font-size: 15px;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3; /* 호버 시 색상 변경 */
+  color: white; /* 흰색 텍스트 */
+}
+
+.btn-secondary {
+  border-radius: 10px; /* 둥근 버튼 */
+}
+
+/* 버튼 호버 효과 (모두보기와 닫기 공통) */
+.btn-secondary:hover {
+  background-color: #6c757d; /* 기본 회색보다 더 진한 색상 */
+  color: white; /* 흰색 텍스트 */
+}
+
+/* 모두보기 버튼 왼쪽 정렬 */
+.modal-footer .btn-view-all {
+  margin-right: auto; /* 왼쪽 정렬 */
+}
+
+#welcomeModal .modal-header {
+  background-color: #007bff; /* 파란색 배경 */
+  color: white; /* 흰색 텍스트 */
+  padding: 10px; /* 패딩 조정 */
+  font-size: 14px; /* 글씨 크기 */
+}
+
+#welcomeModal .modal-body {
+  padding: 20px; /* 본문 여백 */
+  background-color: #f8f9fa; /* 연한 회색 배경 */
+  font-size: 14px; /* 본문 글씨 크기 */
+}
+
+#welcomeModal .modal-footer {
+  background-color: #f1f1f1; /* 밝은 회색 배경 */
+  border-top: 1px solid #ddd; /* 위쪽 테두리 */
+  padding: 10px; /* 패딩 조정 */
+}
+
+/* 쪽지관련 */
+/* 전체 리스트 스타일 */

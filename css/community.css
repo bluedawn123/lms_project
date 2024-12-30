@@ -1,0 +1,228 @@
+/* 타이틀 박스 */
+.title_box {
+  height: 150px;
+  background: url(../img/core-img/Logo_board.svg) no-repeat var(--primary);
+  filter: #2a7ffc;
+  background-position: right 50px center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  h2 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 800;
+  }
+}
+.search_box {
+  height: 300px;
+  background: url(../img/core-img/Logo_board.svg) no-repeat var(--primary);
+  filter: #2a7ffc;
+  background-position: right 50px center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  h2 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 800;
+  }
+  form {
+    margin-top: 48px;
+  }
+  .form-control {
+    border-radius: 0 !important;
+    height: 60px;
+  }
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+    background-color: #001e4a;
+    color: var(--white);
+    border-radius: 0 !important;
+  }
+  .fa-solid {
+    font-size: 28px;
+  }
+}
+.event_box {
+  height: 300px;
+  background: url(../img/event/event_bg.png) no-repeat var(--primary);
+  filter: #2a7ffc;
+  background-position: right 200px center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  h2 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 800;
+  }
+  p {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 36px;
+  }
+}
+
+/* 기본 */
+.community.container {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+h6 {
+  color: var(--darkGray);
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.content hr {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: var(--lineGray);
+}
+.post span {
+  padding: 4px;
+  color: var(--darkGray);
+  background-color: var(--lineGray);
+  font-weight: 400;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* 어사이드 */
+aside {
+  hr {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border: none;
+    height: 1px;
+    background-color: var(--primary);
+  }
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+    margin-bottom: 24px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  .fa-chevron-right {
+    font-size: 12px;
+    color: var(--medium_gray);
+  }
+  a.active {
+    font-weight: 700;
+  }
+  a.active .fa-chevron-right {
+    color: black;
+  }
+}
+
+/* 테이블 기본 설정 */
+table {
+  font-size: 18px;
+  line-height: 20px;
+}
+thead {
+  color: var(--primary);
+}
+th,
+td {
+  padding: 11px !important;
+}
+tbody {
+  font-weight: 400;
+}
+.num,
+.view,
+.recommend,
+.answer {
+  width: 70px;
+}
+.post {
+  text-align: start;
+}
+.post a {
+  padding-left: 18px;
+  color: black;
+  text-decoration: none;
+}
+.writer {
+  width: 206px;
+}
+.date {
+  width: 140px;
+}
+
+/* FAQ */
+.accordion {
+  font-size: 18px;
+}
+.accordion-item {
+  border-radius: 0 !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: #ddd !important; /* 기본 테두리 색상 유지 */
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important; /* 흰색으로 변경 */
+  color: #000 !important; /* 텍스트 색상 설정 */
+}
+.accordion-body {
+  background-color: var(--blueGray);
+  font-size: 16px;
+  padding: 16px 90px;
+}
+span {
+  font-weight: 800;
+  color: var(--primary);
+  margin-right: 56px;
+}
+
+/* 이벤트 */
+.event button {
+  color: var(--darkGray);
+  background-color: var(--lineGray);
+}
+.event button:hover {
+  background-color: var(--lineGray);
+}
+.event button.active {
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+}
+.event button.active:hover {
+  background-color: var(--darkBlue);
+}
+
+/* EVENT */
+.tab-content{
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow : none !important;
+}
+.list-unstyled li img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.list-unstyled li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  margin-bottom: 1rem;
+}
